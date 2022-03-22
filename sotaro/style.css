@@ -1,0 +1,83 @@
+@charset"utf-8";
+
+.syumi{
+	background : white;
+	border : dotted 5px red;
+	width : 80%;
+	margin : 0 auto;
+	padding : 15px;
+}
+
+.ryori{
+	background: white;
+	border : dotted 5px aqua;
+	width : 80%;
+	margin : 0 auto;
+	padding : 15px;
+}
+
+h1{
+	color : red;
+	background : #FFffff;
+	width : 30%;
+	border : dashed 2px orange;
+	text-align : center;
+}
+
+li{
+	font-size : 20px;
+}
+
+body{
+	background-color : black;
+	background-image : url("img/ムウマージ.png");
+	background-image : repeat;
+	background-attachment : fixed;
+}
+
+.bado{
+	height : 200px;
+}
+
+.gazo{
+	height : 150px;
+	border : solid 2px black;
+}
+
+.tofu{
+	height : 250px;
+}
+
+.umatofu{
+	font-size : 18px;
+}
+
+.dodonpati{
+	height : 300px;
+	border : solid 2px black;
+}
+.kasi{
+	font-weight : bold;
+}
+
+.aikokusya{
+	text-align : right;
+	font-color : white;
+}
+
+.sotaro{
+	text-align : center;
+	font-size : 100px;
+	font-family : Papyrus,HGS創英角ﾎﾟｯﾌﾟ体,sans-serif;
+}
+
+.sotaroga{
+	display : block;
+	width : 98%;
+	margin : auto;
+}
+
+.simei{
+	width : 90%;
+	margin : 0 auto;
+}
