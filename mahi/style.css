@@ -1,0 +1,56 @@
+@charset "UTF-8";
+h1{
+color:blac;
+background:#66FFFF;
+width:50%;
+border-top:dotted 5px blue;
+border-bottom:dotted 5px blue;
+}
+
+/*li{
+color:blue;
+	background:#33FFCC;
+	width:30%;
+	border-left:dotted 5px orange;
+	border-right:dotted 5px green];
+}*/
+
+body{
+	background:#99FFCC;
+
+}
+img{
+	height:130px;
+	width:260px;
+	border-top:solid 3px blac;
+}
+
+.aiai{
+	
+	
+	font-weight:bold;
+}	
+
+.sai{
+	font-weight:bold;
+	}
+
+.kiki{
+	
+	border-top:solid 3px gold;
+	font-weight:bold;
+	
+	}
+
+.顔{
+	color:gold;
+}
+	
+	
+	p {
+    width: 200px;
+    background: 
+}
+.right {
+    margin-left: auto;
+}
