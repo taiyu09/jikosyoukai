@@ -1,0 +1,37 @@
+@charset"utf-8";
+
+@font-face {
+  font-family: "my-font";
+  src: url("fonts/PixelMplus12-Regular.ttf");
+}
+
+body{
+	background : #FFFFFF;
+	background: url("img/ジョビジョビくん_顔3.png");/*背景画像を指定*/
+	background-repeat: repeat;			/*リピート*/
+	background-attachment: fixed;			/*スクロールしない*/
+	font-family:'my-font' , "ＭＳ 明朝", sans-serif;/*ローカルフォント指定*/
+}
+a{		/* アンカー青に */
+	color : olive;
+}
+.black{		/* 黒枠 */
+	color : white;
+	background: rgba(0,0,0,0.8);/* 透過 */
+	border-bottom : solid 5px blue;/*下枠*/
+	width : 80%;	/*小さくする*/
+	margin:0 auto;	/*中央寄せ*/
+}
+.gray{		/* グレー枠 */
+	coler : white;
+	background :gray;
+}
+
+.myname{	/*名前を大きく中央に*/
+	font-size: 36px;
+	font-weight: bold;/*太字*/
+	text-align : center;/*中央寄せ*/
+
+}
+.line{
+	border-bottom : solid 1px rgba(75,75,75,0.9);/* 透過 */
