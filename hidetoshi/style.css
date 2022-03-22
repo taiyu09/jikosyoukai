@@ -1,0 +1,55 @@
+@charset utf-8;
+	
+	ol{
+		color:red;
+	}
+	.coment{
+		color:black;
+		font-size:40px;
+		background:green;
+		text-align:center;
+		border: 3px dotted black;
+	}
+	
+	body{
+		background : #F0F8FF;
+    }
+    
+    h1{
+    	color:red;
+    	font-weight:bold;
+    }
+    
+    .namae{
+    	font-weight:bold;
+    	font-size:40px;
+    	font-family:HGP明朝B;"ＭＳ Ｐ明朝",serif;
+    }
+    
+    
+    h3{
+    	color:green;
+    }
+    
+
+    
+    .gakkou {
+    	display:black;
+    	width:23%;
+    	margin:0 aauto;
+    	text-align:center;
+    	border:solid 3px blue;
+    	padding:50px
+    }
+    
+    .gu {
+    	color:red;
+    }
+    
+    .gohan{
+    	border:solid 3px blue;
+    	margin:100px;
+    }
+    
+		
+		

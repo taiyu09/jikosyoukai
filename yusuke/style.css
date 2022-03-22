@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+h1{
+	color:#3366FF;
+}
+
+h2{
+	color:#FF9933;
+	background:#FFFFAA;
+	width:10%;
+	border-left:dotted 2px #FFAD90;
+	border-right:dotted 2px #FFAD90;
+}
+body{
+	background:#EEFFFF;
+}
+
+.one{
+	height : 100px;
+	width : 100px;
+}
+
+.two{
+	border : dotted green 3px;
+	padding : 30px;
+}
+
+.three{
+	border : dashed 3px black;
+	margin : 0 auto;
+	width : 30%
+}
+
+.four{
+	color : red;
+}
