@@ -68,16 +68,22 @@ img{
 .main{
 	width: 40%;
 }
-.img3{
-	position: absolute;
-	top: 14vh;
-	left: 5vh;
-	z-index: -2147483647;
-}
 .img4{
 	position: absolute;
 	top: 14vh;
-	left: 155vh;
+	left: 0vw;
+	z-index: -2147483647;
+}
+.img3{
+	position: absolute;
+	top: 14vh;
+	left: 35vw;
+	z-index: -2147483647;
+}
+.img5{
+	position: absolute;
+	top: 12vh;
+	left: 70vw;
 	z-index: -2147483647;
 }
 @keyframes fade1 {
