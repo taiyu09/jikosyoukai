@@ -1,83 +1,33 @@
-@charset"utf-8";
-
-.syumi{
-	background : white;
-	border : dotted 5px red;
-	width : 80%;
-	margin : 0 auto;
-	padding : 15px;
-}
-
-.ryori{
-	background: white;
-	border : dotted 5px aqua;
-	width : 80%;
-	margin : 0 auto;
-	padding : 15px;
-}
-
-h1{
-	color : red;
-	background : #FFffff;
-	width : 30%;
-	border : dashed 2px orange;
-	text-align : center;
-}
-
-li{
-	font-size : 20px;
-}
+@charset "utf-8";
 
 body{
-	background-color : black;
-	background-image : url("img/ムウマージ.png");
-	background-image : repeat;
-	background-attachment : fixed;
+	display:flex;
 }
 
-.bado{
-	height : 200px;
+.logo{
+	border:solid blue 1px;
 }
 
-.gazo{
-	height : 150px;
-	border : solid 2px black;
+.main{
+	margin-top:110px;	
+	display:flex;	
+	border:solid red 1px;
 }
 
-.tofu{
-	height : 250px;
+.honbun{
+	border:solid black 1px;
+	width:83%;
+	font-size:40px;
+	font-family: 'Yuji Mai', serif;
+	text-align:center;
 }
 
-.umatofu{
-	font-size : 18px;
+.add{
+	border:solid black 1px;
+	text-align:center;
+	width:17%;
 }
 
-.dodonpati{
-	height : 300px;
-	border : solid 2px black;
-}
-.kasi{
-	font-weight : bold;
-}
-
-.aikokusya{
-	text-align : right;
-	font-color : white;
-}
-
-.sotaro{
-	text-align : center;
-	font-size : 100px;
-	font-family : Papyrus,HGS創英角ﾎﾟｯﾌﾟ体,sans-serif;
-}
-
-.sotaroga{
-	display : block;
-	width : 98%;
-	margin : auto;
-}
-
-.simei{
-	width : 90%;
-	margin : 0 auto;
+img{
+	width:80%;
 }
