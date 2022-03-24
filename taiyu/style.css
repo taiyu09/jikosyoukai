@@ -31,7 +31,7 @@ body{
 }
 
 .contents{
-	margin-top: 14vw;
+	margin-top: 9vw;
 	opacity: 0;
 	animation: fade2 1.0s;
 	animation-fill-mode: forwards;
