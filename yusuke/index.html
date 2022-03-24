@@ -5,44 +5,61 @@
 		<title>自己紹介</title>
 		<meta cherset="utf-8">
 		<link rel="stylesheet" href="style.css">
-		<style>
-			.two{
-				font-weight : bold;
-				font-family : "HGS創英角ﾎﾟｯﾌﾟ体", sans-serif;
-			}
-		</style>
 	</head>
-	
 	<body>
-		<h1>氏名</h1>
-		平谷 優典
-		
-		<h1>趣味・好きなこと</h1>
-		<div class="three">
-			<ul>
-			<a href="https://www.shopping-charm.jp/category/2c2c2c2c-2c2c-3133-3030-303030303030"><li>生き物を飼う</li> </a>
-			<a href="http://www.city.morioka.iwate.jp/shisei/midori/koen/1010498.html"><li>散歩</li> </a>
-			<a href="https://news.yahoo.co.jp/"><li>ネットサーフィン</li> </a>
+		<div class="splash"></div>　<!--	スプラッシュ	-->
+		<div class="contents">
+			<header>
+				<div class="title"><a href="index.html">みんなの自己紹介</a></div>
+			</header>
+			<div class="box">
+				<h1>氏名</h1>
+				平谷 優典
+
+				<h1>趣味・好きなこと</h1>
+				<div class="three">
+					<ul>
+					<a href="https://www.shopping-charm.jp/category/2c2c2c2c-2c2c-3133-3030-303030303030"><li>生き物を飼う</li> </a>
+					<a href="http://www.city.morioka.iwate.jp/shisei/midori/koen/1010498.html"><li>散歩</li> </a>
+					<a href="https://news.yahoo.co.jp/"><li>ネットサーフィン</li> </a>
+				</div>
+
+				<h1>コメント</h1>
+				<div class="two">
+					<p>盛岡に慣れてきました。</p>
+					<p>でも、スマホのマップは必須です。</p>
+					<img src="img/ダウンロード (1).jpg" alt="自分">
+					<p>忘れ物の多い自分</p>
+				</div>
+
+				<h1>好きな料理について</h1>
+				<h2>チャーハン</h2><br>
+				<img src="img/チャーハン.jpg" alt="チャーハン" class="one">
+				<span class="four">
+				<ol>
+				<li>長ねぎはみじん切りにします。</li>
+				<li>中火で熱したフライパンにごま油をひき、1を入れて炒め、しんなりしてきたら溶き卵を回し入れ、炒めます。</li>
+				<li>卵に火が通ったらごはんを入れて強火で炒め、ごはんがなじんだら醤油、鶏がらスープの素、塩コショウを入れてさっと炒め、全体に味がなじんだら火から下ろします。</li>
+				<li>お皿に盛り付け、小ねぎをかけて完成です。</li>
+				</span>
+
+				<!--	戻る	-->
+				<div class="black" id="back">
+					<a href="../index.html">トップページに戻る</a>
+				</div>	
+			</div>
+
 		</div>
-		
-		<h1>コメント</h1>
-		<div class="two">
-			<p>盛岡に慣れてきました。</p>
-			<p>でも、スマホのマップは必須です。</p>
-			<img src="img/ダウンロード (1).jpg" alt="自分">
-			<p>忘れ物の多い自分</p>
-		</div>
-		
-		<h1>好きな料理について</h1>
-		<h2>チャーハン</h2><br>
-		<img src="img/チャーハン.jpg" alt="チャーハン" class="one">
-		<span class="four">
-		<ol>
-		<li>長ねぎはみじん切りにします。</li>
-		<li>中火で熱したフライパンにごま油をひき、1を入れて炒め、しんなりしてきたら溶き卵を回し入れ、炒めます。</li>
-		<li>卵に火が通ったらごはんを入れて強火で炒め、ごはんがなじんだら醤油、鶏がらスープの素、塩コショウを入れてさっと炒め、全体に味がなじんだら火から下ろします。</li>
-		<li>お皿に盛り付け、小ねぎをかけて完成です。</li>
-		</span>
-		<a href="../index.html">メインページに戻る</a>
+		<!--	リロード時上に移動させる	-->
+		<script type="text/javascript">
+			window.onload = function(){
+				setTimeout(() => {
+  			const y = window.scrollY
+  				if (y > 0) {
+    				setTimeout(() => window.scrollTo(0, 0), 100)
+  				}
+				}, 0)
+			}
+		</script>
 	</body>
 </html>

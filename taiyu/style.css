@@ -1,4 +1,4 @@
-@charset"utf-8";
+@charset "utf-8";
 
 @font-face {
   font-family: "my-font";
@@ -7,36 +7,127 @@
 
 body{
 	background : #FFFFFF;
-	background: url("img/ジョビジョビくん_顔3.png");/*背景画像を指定*/
+	background: url("img/bg.jpg");/*背景画像を指定*/
 	background-repeat: repeat;			/*リピート*/
 	background-attachment: fixed;			/*スクロールしない*/
 	font-family:'my-font' , "ＭＳ 明朝", sans-serif;/*ローカルフォント指定*/
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	overflow-x: hidden;
+	animation: fade1 1.0s;
+	animation-fill-mode: forwards;
 }
-a{		/* アンカー青に */
-	color : olive;
+
+.splash{
+	position: fixed;
+	background: black;
+	width: 100%;
+	height: 100%;
+	top: 0;
+  left: 0;
+  z-index: 2147483647;
+	opacity: 0;
+	animation: slideout 1.0s;
+	animation-fill-mode: forwards;
 }
+
+.contents{
+	margin-top: 9vw;
+	opacity: 0;
+	animation: fade2 1.0s;
+	animation-fill-mode: forwards;
+}
+
+header {
+	background: white;
+	width: 100%;
+	height: 6vw;
+	box-sizing: border-box;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 1);
+}
+
+.title {
+	margin-top: 1vw;
+	margin-left: 5vw;
+	font-family: "メイリオ","ＭＳ 明朝", sans-serif;
+}
+
+.title a{
+	white-space: nowrap;
+	font-size: 3vw;
+	text-decoration: none;
+	color: black;
+}
+
+a{
+	color : gray;
+}
+
 .black{		/* 黒枠 */
 	color : white;
 	background: rgba(0,0,0,0.8);/* 透過 */
-	border-bottom : solid 5px blue;/*下枠*/
-	width : 80%;	/*小さくする*/
-	margin:0 auto;	/*中央寄せ*/
+	border: rgba(0,0,0,1) solid 3px;
+	width : 70%;	/*小さくする*/
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	border-radius: 10px 0px 10px 0px; /* 左上、右上、右下、左下 */
 }
+
 .gray{		/* グレー枠 */
 	coler : white;
 	background :gray;
 }
 
 .myname{	/*名前を大きく中央に*/
-	font-size: 36px;
+	font-size: 40px;
 	font-weight: bold;/*太字*/
 	text-align : center;/*中央寄せ*/
-
 }
+
 .line{
 	border-bottom : solid 1px rgba(75,75,75,0.9);/* 透過 */
 }
+
 #back{
 	text-align: center;
+	font-size: 35px;
+}
+
+@keyframes fade1 {
+
+	0% {
+    background: white;
+  }
+  100% {
+    background: url("img/bg.jpg");
+  }
+}
+
+@keyframes fade2 {
+
+	30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  0% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+	30% {
+		opacity: 1;
+	}
+  100% {
+    transform: translateX(-100vw);
+		opacity: 0;
+  }
 }

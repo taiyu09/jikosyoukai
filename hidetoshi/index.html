@@ -11,43 +11,56 @@
 			}
 		</style>
 	</head>
-		
-	<body>
-	
-		<h1>氏名</h1>
-		<p class = "namae">桑田　英寿</p>
-		
-	<h1>趣味・好きなこと</h1>
-	<ol>
-		<li>フットサル</li>
-		<li>散歩</li>
-		<li>サッカー観戦</li>
-	</ol>
-	
-	
-		
-	<div class="gakkou">
-	<h3>久慈東高校</h3>
-	<img src = "img/html久慈東.png" alt = "自分を表す画像">
-	</div>
-	<h1>好きなもの</h1>
-	<a href = "https://www.carhartt-wip.com/en">CarharttHPへ</a>
-	<br><a href = "https://www.hystericglamour.jp/">HYSTERIC GLAMOURへ</a></br>
-	<h1>好きな料理のレシピ</h1>
-	<ul>
-		<li>ごはん</li>
-		<li>卵</li>
-		<li>マヨネーズ</li>
-		<li>中華だし</li>
-		<li>しょうゆ</li>
-		<li>具<span class="gu">(好きなもの)</span></li>
-		<li>ネギ</li>
-		<li>塩コショウ</li>
-	</ul>
-	<img src = "img/チャーハン.jpg" alt = "チャーハン画像" class="gohan">
-	<div class="black" id="back">
-		<a href="../index.html">メインページに戻る</a>
-	</div>
 
+	<body>
+		<div class="splash"></div>　<!--	スプラッシュ	-->
+		<div class="contents">
+			<header>
+				<div class="title"><a href="index.html">みんなの自己紹介</a></div>
+			</header>
+			<div class="box">
+				<h1>氏名</h1>
+				<p class = "namae">桑田　英寿</p>
+
+			<h1>趣味・好きなこと</h1>
+			<ol>
+				<li>フットサル</li>
+				<li>散歩</li>
+				<li>サッカー観戦</li>
+			</ol>
+
+			<div class="gakkou">
+			<h3>久慈東高校</h3>
+			<img src = "img/html久慈東.png" alt = "自分を表す画像">
+			</div>
+			<h1>好きなもの</h1>
+			<a href = "https://www.carhartt-wip.com/en">CarharttHPへ</a>
+			<br><a href = "https://www.hystericglamour.jp/">HYSTERIC GLAMOURへ</a></br>
+			<h1>好きな料理のレシピ</h1>
+			<ul>
+				<li>ごはん</li>
+				<li>卵</li>
+				<li>マヨネーズ</li>
+				<li>中華だし</li>
+				<li>しょうゆ</li>
+				<li>具<span class="gu">(好きなもの)</span></li>
+				<li>ネギ</li>
+				<li>塩コショウ</li>
+			</ul>
+			<img src = "img/チャーハン.jpg" alt = "チャーハン画像" class="gohan">
+			<div class="black" id="back">
+				<a href="../index.html">トップページに戻る</a>
+			</div>
+			<script type="text/javascript">
+				window.onload = function(){
+					setTimeout(() => {
+	  			const y = window.scrollY
+	  				if (y > 0) {
+	    				setTimeout(() => window.scrollTo(0, 0), 100)
+	  				}
+					}, 0)
+				}
+			</script>
+		</div>
 	</body>
 </html>

@@ -8,28 +8,51 @@
 </head>
 
 <body>
-	<div class="logo">
-		<img src="img/logo.png">
-	</div>
+	<div class="splash"></div>　<!--	スプラッシュ	-->
+	<div class="contents">
+		<header>
+			<div class="title"><a href="index.html">みんなの自己紹介</a></div>
+		</header>
+		<div class="box">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
 
-	<div class="main">
-		<div class="honbun">
-			<p>朕は高橋爽太郎です</p>
-			<p>20歳、学生です</p>
-			<p>あゝすっごいねむいです</p>
-			<p>オートバイが好きです</p>
-			<p>けっこう多趣味です</p>
-			<p>お風呂入ってからじゃないとベッド入れない派です</p>
-			<p>甘党です</p>
+			<div class="main">
+				<div class="honbun">
+					<p>朕は高橋爽太郎です</p>
+					<p>20歳、学生です</p>
+					<p>あゝすっごいねむいです</p>
+					<p>オートバイが好きです</p>
+					<p>けっこう多趣味です</p>
+					<p>お風呂入ってからじゃないとベッド入れない派です</p>
+					<p>甘党です</p>
+				</div>
+
+				<div class="add">
+					<h1>広告</h1><br>
+					<img src="img/livejupiter_1555289349_33401.webp"><br>
+					<img src="img/CreepyFlimsyDesertpupfish-size_restricted.gif"><br>
+					<img src="img/nero-sports014.gif">
+				</div>
+			</div>
 		</div>
 
-		<div class="add">
-			<h1>広告</h1><br>
-			<img src="img/livejupiter_1555289349_33401.webp"><br>
-			<img src="img/CreepyFlimsyDesertpupfish-size_restricted.gif"><br>
-			<img src="img/nero-sports014.gif">
-		</div>
+	<!--	戻る	-->
+	<div class="black" id="back">
+		<a href="../index.html">トップページに戻る</a>
 	</div>
+</div>
+	<script type="text/javascript">
+		window.onload = function(){
+			setTimeout(() => {
+			const y = window.scrollY
+				if (y > 0) {
+					setTimeout(() => window.scrollTo(0, 0), 100)
+				}
+			}, 0)
+		}
+	</script>
 </body>
 
 </html>
