@@ -1,85 +1,39 @@
-@charset"utf-8";
+@charset "utf-8";
 
-.syumi{
-	background : white;
-	border : dotted 5px red;
-	width : 80%;
-	margin : 0 auto;
-	padding : 15px;
+.logo{
+	/* border:solid blue 1px; */
+	width:30%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
-.ryori{
-	background: white;
-	border : dotted 5px aqua;
-	width : 80%;
-	margin : 0 auto;
-	padding : 15px;
+.main{
+	margin-top:10px;
+	display:flex;
+	/* border:solid red 1px; */
 }
 
-h1{
-	color : red;
-	background : #FFffff;
-	width : 30%;
-	border : dashed 2px orange;
-	text-align : center;
+.honbun{
+	/* border:solid black 1px; */
+	width:83%;
+	font-size:40px;
+	font-family: 'Yuji Mai', serif;
+	text-align:center;
 }
 
-li{
-	font-size : 20px;
+.add{
+    border:solid black 1px;
+	text-align:center;
+	width:17%;
 }
 
-body{
-	background-color : black;
-	background-image : url("img/ムウマージ.png");
-	background-image : repeat;
-	background-attachment : fixed;
+img{
+	width:80%;
 }
 
-.bado{
-	height : 200px;
-}
-
-.gazo{
-	height : 150px;
-	border : solid 2px black;
-}
-
-.tofu{
-	height : 250px;
-}
-
-.umatofu{
-	font-size : 18px;
-}
-
-.dodonpati{
-	height : 300px;
-	border : solid 2px black;
-}
-.kasi{
-	font-weight : bold;
-}
-
-.aikokusya{
-	text-align : right;
-	font-color : white;
-}
-
-.sotaro{
-	text-align : center;
-	font-size : 100px;
-	font-family : Papyrus,HGS創英角ﾎﾟｯﾌﾟ体,sans-serif;
-}
-
-.sotaroga{
-	display : block;
-	width : 98%;
-	margin : auto;
-}
-
-.simei{
-	width : 90%;
-	margin : 0 auto;
+.box {
+	width: 100%;
+	margin: 0 auto;
 }
 
 .splash{
@@ -96,7 +50,7 @@ body{
 }
 
 .contents{
-	margin-top: 6vw;
+	margin-top: 8vw;
 	opacity: 0;
 	animation: fade2 1.0s;
 	animation-fill-mode: forwards;
@@ -125,6 +79,13 @@ header {
 	font-size: 3vw;
 	text-decoration: none;
 	color: black;
+}
+
+#back{
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 @keyframes fade1 {

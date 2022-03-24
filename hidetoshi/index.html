@@ -28,7 +28,7 @@
 				<li>散歩</li>
 				<li>サッカー観戦</li>
 			</ol>
-			
+
 			<div class="gakkou">
 			<h3>久慈東高校</h3>
 			<img src = "img/html久慈東.png" alt = "自分を表す画像">
@@ -51,6 +51,16 @@
 			<div class="black" id="back">
 				<a href="../index.html">メインページに戻る</a>
 			</div>
+			<script type="text/javascript">
+				window.onload = function(){
+					setTimeout(() => {
+	  			const y = window.scrollY
+	  				if (y > 0) {
+	    				setTimeout(() => window.scrollTo(0, 0), 100)
+	  				}
+					}, 0)
+				}
+			</script>
 		</div>
 	</body>
 </html>

@@ -3,7 +3,7 @@
 body {
   text-align: center;
 	background-color: : white;
-	overflow-x: hidden;
+	overflow: hidden;
 	animation: fade1 1.0s;
 	animation-fill-mode: forwards;
 }
@@ -60,6 +60,25 @@ a {
 	margin-right: auto;
 	margin-bottom: 1vw;
 	display: block;
+	display: flex;
+}
+img{
+	width: 30%;
+}
+.main{
+	width: 40%;
+}
+.img3{
+	position: absolute;
+	top: 14vh;
+	left: 5vh;
+	z-index: -2147483647;
+}
+.img4{
+	position: absolute;
+	top: 14vh;
+	left: 155vh;
+	z-index: -2147483647;
 }
 @keyframes fade1 {
 
