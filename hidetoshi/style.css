@@ -1,5 +1,5 @@
 @charset utf-8;
-	
+
 	ol{
 		color:red;
 	}
@@ -10,29 +10,29 @@
 		text-align:center;
 		border: 3px dotted black;
 	}
-	
+
 	body{
 		background : #F0F8FF;
-    }
-    
+	}
+
     h1{
     	color:red;
     	font-weight:bold;
     }
-    
+
     .namae{
     	font-weight:bold;
     	font-size:40px;
     	font-family:HGP明朝B;"ＭＳ Ｐ明朝",serif;
     }
-    
-    
+
+
     h3{
     	color:green;
     }
-    
 
-    
+
+
     .gakkou {
     	display:black;
     	width:23%;
@@ -41,17 +41,102 @@
     	border:solid 3px blue;
     	padding:50px
     }
-    
+
     .gu {
     	color:red;
     }
-    
+
     .gohan{
     	border:solid 3px blue;
     	margin:100px;
     }
-    #back{
-	text-align: center;
-}
-		
-		
+		.box {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.splash{
+			position: fixed;
+			background: black;
+			width: 100%;
+			height: 100%;
+			top: 0;
+		  left: 0;
+		  z-index: 2147483647;
+			opacity: 0;
+			animation: slideout 1.0s;
+			animation-fill-mode: forwards;
+		}
+
+		.contents{
+			margin-top: 8vw;
+			opacity: 0;
+			animation: fade2 1.0s;
+			animation-fill-mode: forwards;
+		}
+
+		header {
+			background: white;
+			width: 100%;
+			height: 6vw;
+			box-sizing: border-box;
+			display: flex;
+			position: fixed;
+			top: 0;
+			left: 0;
+			box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 1);
+		}
+
+		.title {
+			margin-top: 1vw;
+			margin-left: 5vw;
+			font-family: "メイリオ","ＭＳ 明朝", sans-serif;
+		}
+
+		.title a{
+			white-space: nowrap;
+			font-size: 3vw;
+			text-decoration: none;
+			color: black;
+		}
+
+		#back{
+			text-align: center;
+			font-size: 25px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		@keyframes fade1 {
+
+			0% {
+		    background: white;
+		  }
+		  100% {
+		    background: url("img/bg.jpg");
+		  }
+		}
+
+		@keyframes fade2 {
+
+			30% {
+		    opacity: 0;
+		  }
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes slideout {
+		  0% {
+		    transform: translateX(100vw);
+		    opacity: 1;
+		  }
+			30% {
+				opacity: 1;
+			}
+		  100% {
+		    transform: translateX(-100vw);
+				opacity: 0;
+		  }
+		}

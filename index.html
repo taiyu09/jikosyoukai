@@ -6,18 +6,32 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-
-		<header>
-			<div class="title">みんなの自己紹介</div>
-		</header>
-
-		<div class="box">
-			<br>
-			<a href="./mahi/index.html">野坂　真央</a><br><br>
-			<a href="./yusuke/index.html">平谷　優典</a><br><br>
-			<a href="./sotaro/index.html">高橋　爽太郎</a><br><br>
-			<a href="./hidetoshi/index.html">桑田　英寿</a><br><br>
-			<a href="./taiyu/index.html">小笠原　太優</a><br><br>
+		<div class="splash"></div>　<!--	スプラッシュ	-->
+		<div class="contents">
+			<header>
+				<div class="title"><a href="index.html">みんなの自己紹介</a></div>
+			</header>
+			<div class="box">
+				<br>
+				<a href="./mahi/index.html">野坂　真央</a><br><br>
+				<a href="./yusuke/index.html">平谷　優典</a><br><br>
+				<a href="./sotaro/index.html">高橋　爽太郎</a><br><br>
+				<a href="./hidetoshi/index.html">桑田　英寿</a><br><br>
+				<a href="./taiyu/index.html">小笠原　太優</a><br><br>
+			</div>
 		</div>
+
+		<!--	リロード時上に移動させる	-->
+		<script type="text/javascript">
+			window.onload = function(){
+				setTimeout(() => {
+  			const y = window.scrollY
+  				if (y > 0) {
+    				setTimeout(() => window.scrollTo(0, 0), 100)
+  				}
+				}, 0)
+			}
+		</script>
+
 	</body>
 </html>
